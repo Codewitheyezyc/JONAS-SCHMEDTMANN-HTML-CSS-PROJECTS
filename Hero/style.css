@@ -1,0 +1,81 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/* MAIN COLOR: #e67e22*/
+/* GREY COLOR: #f8f9fa */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Rubik", sans-serif;
+  color: #f8f9fa;
+}
+
+header {
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url(hero.jpg);
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 32px;
+}
+
+.position {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.text-wrapper {
+  width: 50%;
+}
+
+.big-text {
+  font-size: 52px;
+  line-height: 1.05;
+  padding-bottom: 32px;
+}
+
+.text {
+  font-size: 20px;
+  line-height: 1.6;
+  padding-bottom: 48px;
+}
+
+.btn:link,
+.btn:visited {
+  color: #fff;
+  background-color: #e67e22;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 16px 32px;
+  border-radius: 8px;
+  display: inline-block;
+}
